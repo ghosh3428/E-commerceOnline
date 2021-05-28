@@ -20,6 +20,16 @@ public class Category
 	
 	@Column(name="Description")
 	private String desc;
+	
+	private boolean isActive;
+
+	public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
 
 	public int getId() 
 	{
