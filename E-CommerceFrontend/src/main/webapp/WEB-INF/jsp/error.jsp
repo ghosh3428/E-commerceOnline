@@ -40,52 +40,59 @@
 
 <body>
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
-<br/>
-<br/>
-<br/>
+	<div class="wrapper">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="${contextRoot}/home">Home</a>
+				</div>
+			</div>
+		</nav>
 
 
-	<!-- Page Content -->
-	
-	<c:if test="${userclickhome == true}">
-		<%@include file="home.jsp"%>
-	</c:if>
+		<div class="content">
 
-	<c:if test="${userclickabout == true}">
-		<%@include file="aboutus.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickcontact == true}">
-		<%@include file="contactus.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickallproduct == true or userclickcategoryproduct == true }">
-		<%@include file="listproduct.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickmanageproduct == true}">
-		<%@include file="manageproduct.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickshowcart == true}">
-		<%@include file="cart.jsp"%>
-	</c:if>
-	
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
+			<div class="container">
 
-	<!-- Bootstrap core JavaScript -->
-	<script src="${jquery}/jquery.min.js"></script>
-	<script src="${bootjs}/bootstrap.bundle.min.js"></script>
-	
-	<!-- DataTable core JavaScript -->
-	<script src="${custumjs}/datatables.min.js"></script>
-	
-	<!-- Custum JavaScript -->
-	<script src="${custumjs}/myscript.js"></script>
+				<div class="row">
 
+					<div class="col-xs-12">
+
+
+						<div class="jumbotron">
+
+							<h1>${errorTitle}</h1>
+							<hr />
+
+							<blockquote style="word-wrap: break-word">
+
+								${errorDescription}</blockquote>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="${jquery}/jquery.min.js"></script>
+		<script src="${bootjs}/bootstrap.bundle.min.js"></script>
+
+		<!-- DataTable core JavaScript -->
+		<script src="${custumjs}/datatables.min.js"></script>
+
+		<!-- Custum JavaScript -->
+		<script src="${custumjs}/myscript.js"></script>
 </body>
 
 </html>

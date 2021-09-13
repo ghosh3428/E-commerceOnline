@@ -46,8 +46,6 @@
 
 
 		<div class="col-sm-12">
-
-
 			<table id="productTable"
 				class="table table-condensed table-striped table-hover">
 
@@ -59,15 +57,22 @@
 						<th>Brand Name</th>
 						<th>Unit Price</th>
 						<th>Quantity</th>
-						<th></th>
+						
 					</tr>
 				</thead>
-
-
+				<tfoot>
+					<tr>
+						<th></th>
+						<th>ID</th>
+						<th>Product Name</th>
+						<th>Brand Name</th>
+						<th>Unit Price</th>
+						<th>Quantity</th>
+						
+					</tr>
+				</tfoot>
 			</table>
 		</div>
-
-
 
 	</div>
 </div>

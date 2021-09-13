@@ -41,51 +41,14 @@
 <body>
 
 	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
-<br/>
-<br/>
-<br/>
-
-
-	<!-- Page Content -->
-	
-	<c:if test="${userclickhome == true}">
-		<%@include file="home.jsp"%>
-	</c:if>
-
-	<c:if test="${userclickabout == true}">
-		<%@include file="aboutus.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickcontact == true}">
-		<%@include file="contactus.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickallproduct == true or userclickcategoryproduct == true }">
-		<%@include file="listproduct.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickmanageproduct == true}">
-		<%@include file="manageproduct.jsp"%>
-	</c:if>
-	
-	<c:if test="${userclickshowcart == true}">
-		<%@include file="cart.jsp"%>
-	</c:if>
-	
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
-
-	<!-- Bootstrap core JavaScript -->
-	<script src="${jquery}/jquery.min.js"></script>
-	<script src="${bootjs}/bootstrap.bundle.min.js"></script>
-	
-	<!-- DataTable core JavaScript -->
-	<script src="${custumjs}/datatables.min.js"></script>
-	
-	<!-- Custum JavaScript -->
-	<script src="${custumjs}/myscript.js"></script>
-
-</body>
-
-</html>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+		role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="${flowExecutionUrl}&_eventId_home">HOME</a>
+			</div>
+		</div>
+	</nav>
+	<br />
+	<br />
+	<br />
