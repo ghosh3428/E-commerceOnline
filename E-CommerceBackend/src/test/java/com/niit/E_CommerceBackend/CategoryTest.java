@@ -30,20 +30,20 @@ public class CategoryTest
 		categoryDAO = (CategoryDAO)context.getBean("categoryDAO");
 	}
 	
-	/*
+	
 	@Test	
-	public void testAddCategory() 
+	public void testAddUser() 
 	{
 		category = new Category();
-		category.setName("Laptop");
-		category.setDesc("Sample category for Laptop");
+		category.setName("Headphone");
+		category.setDesc("Sample category for Headphone");
 		
 		//1. Error message , 2. Expected result , 3. Actual Result
-		assertEquals("Error adding user",true,categoryDAO.addCategory(category));
+		assertEquals("Error adding Category",true,categoryDAO.addCategory(category));
 		
 		
 	}
-	*/
+	
 	/*
 	@Test	
 	public void testUpdateCategory() 
@@ -54,7 +54,7 @@ public class CategoryTest
 		
 		
 	}
-	*/
+	
 	
 	@Test
 	public void testCategoryList() 
@@ -63,5 +63,5 @@ public class CategoryTest
 		
 		
 	}
-
+*/
 }

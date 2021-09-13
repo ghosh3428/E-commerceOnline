@@ -22,11 +22,11 @@ public class hibernateConfig
 	private String DATABASE_URL      = "jdbc:h2:tcp://localhost/~/niit";
 	private String DATABASE_DRIVER   = "org.h2.Driver";
 	private String DATABASE_DIALECT  = "org.hibernate.dialect.H2Dialect";
-	private String DATABASE_USERNAME = "niitstudent";
+	private String DATABASE_USERNAME = "student";
 	private String DATABASE_PASSWORD = "";
 
 	// dataSource bean will be available
-	@Bean()
+	@Bean("dataSource")
 	public DataSource getDataSource() {
 		
 		BasicDataSource dataSource = new BasicDataSource();
